@@ -103,3 +103,12 @@ html {
     flex-grow: 1;
     background-color: #d9d9d9;
 }
+
+/* BREAKPOINTS */
+
+@media (max-width: 1500px) {
+    body {
+        background-color: aqua;
+    }
+
+}
