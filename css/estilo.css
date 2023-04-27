@@ -38,6 +38,20 @@ html {
 
 }
 
+table {
+    border-collapse: collapse;
+    margin: 5% auto;
+}
 
-/* BREAKPOINTS 590px */
+th, td {
+    border: solid 1px #dddddd;
+    padding: 8px;
+}
 
+tr:nth-child(even) {
+    background-color: #cccccc;
+}
+
+tr:hover{
+    background-color: #cccccc;
+}
