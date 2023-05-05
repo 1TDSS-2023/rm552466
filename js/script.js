@@ -96,16 +96,33 @@
 //         console.log(`Itens do novo Array: ${n}`);
 //     })
 // });
-let nr1 = [1, 2, 3, 4, 5];
-let nr2 = [6, 7, 8, 9, 10];
-console.log(nr1);
-console.log(nr2);
-// Concatenando Arrays em um novo array com operador spread(...);
-let nr3 = [...nr1,...nr2];
-console.log(`Novo Array : ${nr3}`)
-//Imprimindo o novo array com forEach
-nr3.forEach(nr => {
-    //nr.forEach(n => {
-        console.log(`Itens do novo Array: ${nr}`);
-    //});
-});
+// let nr1 = [1, 2, 3, 4, 5];
+// let nr2 = [6, 7, 8, 9, 10];
+// console.log(nr1);
+// console.log(nr2);
+// // Concatenando Arrays em um novo array com operador spread(...);
+// let nr3 = [...nr1,...nr2];
+// console.log(`Novo Array : ${nr3}`)
+// //Imprimindo o novo array com forEach
+// nr3.forEach(nr => {
+//     //nr.forEach(n => {
+//         console.log(`Itens do novo Array: ${nr}`);
+//     //});
+// });
+// const imgElements = [...document.getElementsByTagName("img")];
+// // for (let index = 0; index < imgElements.length; index++) {
+// //     console.log(imgElements[index].src);  
+// // }
+// // const imgElementsArray = [...imgElements];
+// imgElements.forEach((img) => {
+//     img.setAttribute("width","10%");
+// })
+
+const elements = [...document.querySelectorAll(".teste")];
+console.log(elements);
+
+elements.forEach((el) => {
+    if(el.tagName.toLowerCase() == "img"){
+        console.log(el);
+    }
+})
