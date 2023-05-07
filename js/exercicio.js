@@ -31,4 +31,5 @@ button[2].addEventListener("click", () => {
 
 // 4)
 button[3].addEventListener("click", () => {
+    h2[0].innerHTML = "Exercício 4 completo!"
 })
